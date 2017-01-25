@@ -1,0 +1,615 @@
+
+
+<!DOCTYPE html><html lang="es">
+	<head>
+	    	    <meta charset="UTF-8" />
+	    <!--  metas responsive IE8 -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title></title><meta http-equiv="pragma" content="no-cache" >
+<meta http-equiv="Cache-Control" content="no-cache" >
+<meta http-equiv="Content-Language" content="es-ES" >
+<meta name="robots" content="noindex,nofollow" >
+<meta name="googlebot" content="noindex,nofollow" >
+<meta name="description" content="Enero 2017, " ><meta property="og:type" content="website" >
+<meta property="og:locale" content="es_ES" >
+<meta property="og:url" content="https://www.bankimia.com/wgSimuladorHipotecasAncho" >
+<meta property="og:title" content="" >
+<meta property="og:description" content="Enero 2017, " >
+<meta property="og:image" content="https://b2.bkmcdn.com/images/global/logo-bkm-small.jpg" >
+<link href="//static.bkmcdn.com/min/?f=/css/bankimia.css,/css/bankimia-sprites.css,/scripts/vendor/jquery-ui/jquery-ui.css,/scripts/vendor/plugins/qtip/jquery.qtip.css,/css/bootstrap.css,/css/min/_bankimia.css,/css/min/bankimia-sprites.css" media="screen" rel="stylesheet" type="text/css" >
+<style type="text/css" media="screen">
+<!--
+
+    .ui-slider-horizontal{width:360px;}
+
+
+-->
+</style>
+<style type="text/css" media="screen">
+<!--
+header span a.logo{background-image:url("//static.bkmcdn.com/images/logotipos/bankimia_logo.png");}
+.ajax_loader,#cboxLoadingOverlay{background-image:url("//static.bkmcdn.com/images/global/ajax-loader.gif");}
+.mejor-tarjeta.chica{background-image:url('//static.bkmcdn.com/images/landings/prestamos/tematicas/tarjeta.jpg');}
+.pre-landing a.mejor-tarjeta{background-image:url(//static.bkmcdn.com/images/publi/landings/mejor-tarjeta.png);}
+.pre-landing .back-tarjetas{background-image:url(//static.bkmcdn.com/images/publi/landings/pre-landing-tarjetas.jpg);}
+.head-section.bg-mail{background-image:url('//static.bkmcdn.com/images/global/bg-mail.png');}
+.back-landing{background-image:url("//static.bkmcdn.com/images/publi/landings/background.gif")!important;}
+.analizamos-caso{background-image:url('//static.bkmcdn.com/images/publi/landings/analizamos-caso.png');}
+.solicitar-informacion{background-image:url('//static.bkmcdn.com/images/publi/landings/solicitar-informacion.png');}
+ul.progres-stat{background-image:url('//static.bkmcdn.com/images/global/back-progres-stat.png');}
+ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:after,.btn-arrow-back:before,.b-tunel #cboxClose,a.btn-arrow-back:before,.icon-callcenter:before{background-image:url('//static.bkmcdn.com/images/global/sprite.png');}
+.widget-title{background-image:url('//static.bkmcdn.com/images/logotipos/isotipo-bkm.svg');}
+#wgfieldset #sliderImporte .ui-state-default,#wgfieldset #sliderCuota .ui-state-default,#wgfieldset #sliderPlazo .ui-state-default,.ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{background-image:url('//static.bkmcdn.com/images/global/icon-arrow-up.png');}
+.landing .solicitar-informacion.red{background-image:url('//static.bkmcdn.com/images/publi/landings/solicitar-informacion-red.png');}
+.landing .solicitar-informacion.green{background-image:url('//static.bkmcdn.com/images/publi/landings/solicitar-informacion-green.png');}
+.landing .solicitar-informacion.orange{background-image:url('//static.bkmcdn.com/images/publi/landings/solicitar-informacion-orange.png');}
+.landing-foot{background-image:url('//static.bkmcdn.com/images/landings/footer-entidades2.jpg');}
+.estudio-prestamos ul.progres-stat{background-image:url('//static.bkmcdn.com/images/global/back-progres-stat.png');}
+.bkm-panel-heading:before{background-image:url('//static.bkmcdn.com/images/mov/mobil-spriteX2.png');}
+#oneToOne .bg{background-image:url('//static.bkmcdn.com/images/landings/prestamos/IMG_FONDO_big.jpg');}
+-->
+</style>	    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="/css/bankimia-ie7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" type="text/css" href="/css/bankimia-ie8.css" />
+        <![endif]-->
+        <!--[if gte IE 9]>
+            <link rel="stylesheet" type="text/css" href="/css/bankimia-ie9.css" />
+        <![endif]-->
+	    <style type="text/css" media="screen">
+		    <!--
+	    	body {background: none !important;}
+		    -->
+	    </style>
+	    
+		<script type='text/javascript'>
+<!--
+  // GOOGLE DFP START
+
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+
+
+			/* Google DFP Push Define */
+			googletag.cmd.push(function() {
+		
+					googletag.defineSlot(
+						'/1015087/bankimia_header_728x90' ,
+						 [728, 90]  ,
+						'div-gpt-ad-1385118800505-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+					googletag.defineSlot(
+						'/1015087/bankimia_sideheader_236x90' ,
+						 [236, 90]  ,
+						'div-gpt-ad-1385729034695-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+					googletag.defineSlot(
+						'/1015087/bankimia_sidebar1_300x250' ,
+						 [300, 250]  ,
+						'div-gpt-ad-1385119103093-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+					googletag.defineSlot(
+						'/1015087/bankimia_sidebar2_300x250' ,
+						 [300, 250]  ,
+						'div-gpt-ad-1385119142708-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+					googletag.defineSlot(
+						'/1015087/bankimia_prefooter_970x90' ,
+						 [970, 90]  ,
+						'div-gpt-ad-1385468833842-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+					googletag.defineSlot(
+						'/1015087/bankimia_tunel_300x250' ,
+						 [300, 250]  ,
+						'div-gpt-ad-1385119187518-0'
+					).setCollapseEmptyDiv(true).addService(googletag.pubads());
+			
+				/* Google DFP targeting for pageURL */
+				
+				googletag.pubads().setTargeting(
+				'pageURL' , '/wgSimuladorHipotecasAncho'
+				); 
+
+				/* Google DFP targeting for type */
+				
+				googletag.pubads().setTargeting(
+				'type' , 'mortgageWidgetSimulatorWide'
+				); 
+
+	/* Enabling google DFP */
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+
+ // GOOGLE DFP END
+// -->
+
+			});
+		</script>
+		        
+
+</head>
+<body
+		>
+<script type='text/javascript'>
+                    var dataLayerBankimia = dataLayerBankimia || [];
+                    dataLayerBankimia.push({
+                    'ContentGrouping1':'bankimia',
+                    'ContentGrouping2':'widget', 
+                    'ContentGrouping3':'hipotecas',
+                    'ContentGrouping4':'',
+                    'ContentGrouping5':''
+                    });
+                </script>
+            <!-- Google Tag Manager -->
+                <noscript>
+                    <iframe src='//www.googletagmanager.com/ns.html?id=GTM-T75WXP'
+                        height='0' 
+                        width='0' 
+                        style='display:none;visibility:hidden'>
+                    </iframe>
+                </noscript>
+                <script>(
+                function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                    })(window,document,'script','dataLayerBankimia','GTM-T75WXP');
+                </script>
+            <!-- End Google Tag Manager -->
+
+    <!--  Formulario de búsqueda -->
+    <form action="" method="post" class="widget simulador-h nomargin" name="datos" id="form-simulador">
+        <h3 class="bolder f-110 gris-6">1. 贷款利率种类</h3>
+        <fieldset class="type-line fullline tabu-1">
+            <div class="box nomargin-b">
+                <input type="radio" name="interes" id="tipointeresvar" checked="checked" value="0"/><span> 浮动利息:</span>
+                <div class="fld">
+                    <select rel="selectpicker" name="indices" id="tipo-variable">
+                                                    <option value="-0.080" >EUR (Euribor 1 año)</option>
+                                                    <option value="-0.082" >Euribor REUTERS (Euribor 1 año)</option>
+                                                    <option value="3.267" >IRPHb (IRPH Bancos)</option>
+                                                    <option value="3.940" >IRPHc (IRPH Cajas)</option>
+                                                    <option value="1.936" >IRPHce (IRPH Conjunto Entidades)</option>
+                                            </select>
+                    <span class="bolder f-120 gris-9 inline-block">+</span>
+                    <input maxlength= "8" name="diferencial" id="diferencial_presuma" type="text" class="unitx1_3" value="0,00" />
+                    <span class="bolder f-120 gris-9 inline-block">=</span>
+                    <input type="text" value="0,00" class="unitx1_3" name="resultadointeres" id="total-disabled" disabled="disabled" /> %
+                </div>
+                <div class="block separadort">
+                    <input type="radio" name="interes" id="tipointeresfijo"  value="1" /><span> 固定利息: </span>
+                    <input maxlength= "8"  type="text" id="interesfijo" name="interes-fijo" disabled="disabled" /> <span>%</span>
+
+                </div>
+            </div>
+        </fieldset>
+        <h3 class="bolder f-110 gris-6">2. 贷款金额和年限</h3>
+        <fieldset class="type-line tabu-1">
+            <div class="box nomargin-b">
+                <div class="fld field-importe">
+                                        <label for="calculaimporte">贷款金额:</label>
+                    <input maxlength= "12" type="text" class="unitx1" id="importeslider" name="importeslider" value="200000" /> €
+                    <span id="alert-importe" class="rojo"></span>
+                </div>
+                <div class="fld caja-importe caja-importe-hipotecas clear separador">
+                    <div class="layout-slider">
+                        <div id="sliderImporte"></div>
+                    </div>
+                </div>
+                <span id="alert-plazo" class="rojo"></span>
+                <div class="fld field-plazo">
+                    <label for="calculaplazo">年限:</label>
+                    <input maxlength="2" type="text" class="unitx1_3" id="plazoslider" name="plazoslider" value="30" /> 年
+                </div>
+                <div class="caja-plazo caja-plazo-hipotecas clear separador">
+                    <div class="layout-slider">
+                        <div id="sliderPlazo"></div>
+                    </div>
+                </div>
+                <input maxlength= "10" type="hidden" class="unitx1" id="cuota" value="1026"/>
+            </div>
+        </fieldset>
+
+    </form>
+    <!--  Formulario de búsqueda -->
+
+    <div class="resultado-simulador-h tabu-1">
+        <span class="bolder f-140 oxid">结果:</span>
+        <span id="label-resultado" class="f-110 tabu-1">每月支付:</span>
+        <span id="value-resultado" class="f-140 bolder verde inline-block">
+            1.023 €
+        </span>
+    </div>
+	
+
+<!-- Analytics Google -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3672248-1']);
+  _gaq.push(['_setCampaignCookieTimeout',172800000]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- End Analytics Google -->
+<script type="text/javascript" src="//static.bkmcdn.com/scripts/app.js?v27"></script>
+<script type="text/javascript" src="//static.bkmcdn.com/scripts/vendor/plugins/qtip/jquery.qtip.min.js?v27"></script>
+<script type="text/javascript">
+    //<!--
+     $(document).ready(function() {
+
+        //////////// CONTROL CAMPOS INTERES //////////////////
+
+        //valor interes variable por defecto
+        $('#total-disabled').val(formatAsDecimal(parseFloat($('#tipo-variable option:selected').val()).toFixed(3)));
+
+        $('#tipointeresvar').click( function()  {
+            $('#interesfijo').attr('disabled', true);
+            $('#diferencial_presuma').attr('disabled', false);
+        });
+
+        $('#tipointeresfijo').click( function()  {
+            $('#diferencial_presuma').attr('disabled', true);
+            $('#interesfijo').attr('disabled', false);
+        });
+
+        $('#diferencial_presuma').keyup( function() {
+            if ($('#diferencial_presuma').val() == '' ) {
+                $('#total-disabled').val(formatAsDecimal(parseFloat($('#tipo-variable option:selected').val()).toFixed(3)));
+            }else{
+                $('#total-disabled').val(formatAsDecimal(parseFloat(parseFloat($('#tipo-variable option:selected').val())+parseFloat($('#diferencial_presuma').val().replace(",","."))).toFixed(3)));
+                interes = parseFloat($('#total-disabled').val().replace(",","."));
+                $('#form-avanzada #interes').val(interes);
+                calcular( interes, $('#cuota').val().replace(/[.]/g,"").replace(",","."), $('#importeslider').val().replace(/[.]/g,"").replace(",","."), $('#plazoslider').val().replace(",","."));
+            }
+        } );
+
+        $('#diferencial_presuma').blur( function() {
+            $('#diferencial_presuma').val(formatAsDecimal($('#diferencial_presuma').val().replace(",",".")));
+            validar();
+            $('#total-disabled').val(formatAsDecimal(parseFloat(parseFloat($('#tipo-variable option:selected').val())+parseFloat($('#diferencial_presuma').val().replace(",","."))).toFixed(3)));
+            interes = parseFloat($('#total-disabled').val().replace(",","."));
+            $('#form-avanzada #interes').val(interes);
+        } );
+
+        $('#interesfijo').change( function() {
+            $('#interesfijo').val(formatAsDecimal($('#interesfijo').val().replace(",",".")));
+            validar();
+            interes = parseFloat($('#interesfijo').val().replace(",","."));
+            $('#form-avanzada #interes').val(interes);
+            calcular( interes, $('#cuota').val().replace(/[.]/g,"").replace(",","."), $('#importeslider').val().replace(/[.]/g,"").replace(",","."), $('#plazoslider').val().replace(",","."));
+        } );
+
+        $('#tipo-variable').change( function() {
+            $('#total-disabled').val(formatAsDecimal(parseFloat(parseFloat($('#tipo-variable option:selected').val())+parseFloat($('#diferencial_presuma').val().replace(",","."))).toFixed(3)));
+            interes = parseFloat($('#total-disabled').val().replace(",","."));
+            $('#form-avanzada #interes').val(interes);
+            calcular( interes, $('#cuota').val().replace(/[.]/g,"").replace(",","."), $('#importeslider').val().replace(/[.]/g,"").replace(",","."), $('#plazoslider').val().replace(",","."));
+        } );
+
+
+        ///////////// CONTROL DE CAJAS ////////////
+
+        $('.caja-cuota, .field-cuota').css('display','none');
+        $('.caja-plazo, .field-plazo, .caja-importe, .field-importe').css('display','block');
+
+        //////////////// SLIDERS /////////////////
+
+        var sliderPlazo, sliderCuota, sliderImporte, sliderPlazoLock = false, sliderCuotaLock = false, sliderImporteLock = false;
+        var interes = parseFloat(jQuery('#total-disabled').val().replace(",", "."));
+
+        //Setup sliderPlazo
+        // Function triggered on slider Events
+        function updateSliderPlazo (e, ui) {
+            var val = jQuery("#sliderPlazo").slider('option', 'value');
+            handlePlazo.qtip('option', 'content.text', '' + val);
+
+            if (!sliderPlazoLock) {
+                jQuery('#plazoslider').val(val);
+                $('#form-avanzada #plazo').val(val);
+                calcular(interes, jQuery("#cuota").val().replace(/[.]/g, "").replace(",", "."), jQuery("#importeslider").val().replace(/[.]/g, "").replace(",", "."), parseInt(jQuery("#plazoslider").val()));
+            }
+            //$('.rojo').empty();
+        };
+
+        jQuery("#sliderPlazo").slider({
+            min: 1,
+            max: 60,
+            step: 1,
+            value: 20,
+            slide: updateSliderPlazo
+        });
+
+
+        //Setup sliderCuota
+        //Function triggered on slider Events
+
+        function updateSliderCuota (e, ui) {
+            var val = jQuery("#sliderCuota").slider('option', 'value');
+            handleCuota.qtip('option', 'content.text', '' + val);
+            if (!sliderCuotaLock) {
+                jQuery('#cuota').val(formatAsCurrency(formatAsDecimal(parseFloat(val).toFixed(2))));
+                calcular(interes, jQuery("#cuota").val().replace(/[.]/g, "").replace(",", "."), jQuery("#importeslider").val().replace(/[.]/g, "").replace(",", "."), parseInt(jQuery("#plazoslider").val()));
+            }
+            //$('.rojo').empty();
+        }
+
+        jQuery("#sliderCuota").slider({
+            value:1000,
+            min: 100,
+            max: 10000,
+            step: 100,
+            slide: updateSliderCuota
+        });
+
+
+        // Setup sliderImporte
+        // Function triggered on slider Events
+        function updateSliderImporte (e, ui) {
+            var val = jQuery("#sliderImporte").slider('option', 'value');
+            handleImporte.qtip('option', 'content.text', '' + val);
+            if (!sliderImporteLock) {
+                jQuery('#importeslider').val(formatAsCurrency(val));
+                $('#form-avanzada #importe').val(val);
+                calcular(interes, jQuery("#cuota").val().replace(/[.]/g, "").replace(",", "."), jQuery("#importeslider").val().replace(/[.]/g, "").replace(",", "."), parseInt(jQuery("#plazoslider").val()));
+            }
+            //$('.rojo').empty();
+        }
+        jQuery("#sliderImporte").slider({
+            value:6000,
+            min: 6000,
+            max: 1000000,
+            step: 1000,
+            slide: updateSliderImporte
+
+        });
+
+        // Handlers
+        handleCuota = $('.ui-slider-handle', jQuery("#sliderCuota"));
+        handlePlazo = $('.ui-slider-handle', jQuery("#sliderPlazo"));
+        handleImporte = $('.ui-slider-handle', jQuery("#sliderImporte"));
+
+        // Setup handlers qTip
+
+        handleCuota.qtip({
+            content: '' + jQuery("#sliderCuota").slider('option', 'value'), // Use the current value of the slider
+            position: {
+                my: 'bottom center',
+                at: 'top center',
+                container: handleCuota // Stick it inside the handle element so it keeps the position synched up
+            },
+            hide: {
+                delay: 1000 // Give it a longer delay so it doesn't hide frequently as we move the handle
+            },
+            style: {
+                classes: 'ui-tooltip-slider',
+                widget: true // Make it Themeroller compatible
+            }
+        });
+        handleImporte.qtip({
+            content: '' + jQuery("#sliderImporte").slider('option', 'value'), // Use the current value of the slider
+            position: {
+                my: 'bottom center',
+                at: 'top center',
+                container: handleImporte // Stick it inside the handle element so it keeps the position synched up
+            },
+            hide: {
+                delay: 1000 // Give it a longer delay so it doesn't hide frequently as we move the handle
+            },
+            style: {
+                classes: 'ui-tooltip-slider',
+                widget: true // Make it Themeroller compatible
+            }
+        });
+        handlePlazo.qtip({
+            content: '' + jQuery("#sliderPlazo").slider('option', 'value'), // Use the current value of the slider
+            position: {
+                my: 'bottom center',
+                at: 'top center',
+                container: handlePlazo // Stick it inside the handle element so it keeps the position synched up
+            },
+            hide: {
+                delay: 1000 // Give it a longer delay so it doesn't hide frequently as we move the handle
+            },
+            style: {
+                classes: 'ui-tooltip-slider',
+                widget: true // Make it Themeroller compatible
+            }
+        });
+
+        ///////////// CONTROL INPUTS ///////////////
+
+        $('#importeslider').blur( function() {
+            validar();
+            calcular( interes, $("#cuota").val().replace(/[.]/g,"").replace(",","."), $('#importeslider').val().replace(/[.]/g,"").replace(',','.'), $('#plazoslider').val());
+            jQuery("#sliderImporte").slider("value",$('#importeslider').val().replace(/[.]/g,"").replace(",","."));
+            handleImporte.qtip('option', 'content.text', '' + $('#importeslider').val().replace(/[.]/g,"").replace(",","."));
+            $('#form-avanzada #importe').val($('#importeslider').val().replace(/[.]/g,"").replace(",","."));
+        });
+
+        $('#plazoslider').blur( function() {
+            validar();
+            calcular( interes, $("#cuota").val().replace(/[.]/g,"").replace(",","."), $('#importeslider').val().replace(/[.]/g,"").replace(',','.'), $('#plazoslider').val());
+            jQuery("#sliderPlazo").slider("value",$('#plazoslider').val());
+            handlePlazo.qtip('option', 'content.text', '' + $('#plazoslider').val());
+            $('#form-avanzada #plazo').val($('#plazoslider').val());
+        });
+
+
+        //////////// CáLCULOS //////////////
+
+        //Métodos de datos sliders
+        function calcular(interes, cuota, importe, plazo){
+            calculaCuota(interes, importe, plazo);
+        }
+
+        //calcular cuota
+        function calculaCuota(interes, importe, plazo){
+            var interesMensual =  parseFloat(interes/1200);
+            plazo = parseFloat( plazo * 12);
+            var interes2 = Math.pow( (1 + interesMensual) , -plazo );
+            cuota =  parseFloat((importe * interesMensual)/(1- interes2)).toFixed(2);
+            $('#cuota').val(formatAsCurrency(formatAsDecimal(cuota)));
+            $('#resultado').val(formatAsCurrency(formatAsDecimal(cuota))+" €");
+            $('#label-resultado').text("Cuota mensual:");
+            $('#value-resultado').text(formatAsCurrency(formatAsDecimal(cuota))+" €");
+            sliderCuotaLock = true;
+            jQuery("#sliderCuota").slider("value", parseFloat(cuota));
+            sliderCuotaLock = false;
+
+
+            validar();
+
+        }
+
+        ////////// VALIDACIONES CAMPOS /////////////
+
+        function validar(){
+
+            //validar interes variable
+            if (document.getElementById('interesfijo').disabled) {
+                if ($('#diferencial_presuma').val() == '') {
+                    alert ("debes introducir un valor para el interés variable");
+                    document.datos.diferencial_presuma.focus();
+                    $('#diferencial_presuma').val(0,00);
+                }else{
+                    if (isNaN(document.datos.diferencial_presuma.value.replace(",","."))){
+                        alert("El interés debe ser un valor numérico");
+                        document.datos.diferencial_presuma.focus();
+                        $("#diferencial_presuma").val(0,00);
+                        return false;
+                    }else{
+                        if ((document.datos.diferencial_presuma.value.replace(",",".") > 15) || (document.datos.diferencial_presuma.value.replace(",",".") < -1)){
+                            alert("El diferencial debe ser un valor comprendido entre -1% y 15%");
+                            document.datos.diferencial_presuma.focus();
+                            if (document.datos.diferencial_presuma.value.replace(",",".") > 15){
+                                $("#diferencial_presuma").val(15);
+                            }else{
+                                $("#diferencial_presuma").val(-1);
+                            }
+                            return false;
+                        }
+                    }
+                }
+            }
+
+            //validar interes fijo
+            if (document.getElementById('diferencial_presuma').disabled) {
+                if ($('#interesfijo').val() == '') {
+                    alert ("debes introducir un valor de interés fijo");
+                    document.datos.interesfijo.focus();
+                    $('#interesfijo').val(formatAsDecimal(0.5));
+                }else{
+                    if (isNaN(document.datos.interesfijo.value.replace(",","."))){
+                        alert("El interés debe ser un valor numérico");
+                        document.datos.interesfijo.focus();
+                        $("#interesfijo").val(formatAsDecimal(0.5));
+                        return false;
+                    }else{
+                        if ((document.datos.interesfijo.value.replace(",",".") > 30) || (document.datos.interesfijo.value.replace(",",".") < 0)){
+                            alert("El interés fijo debe ser un valor comprendido entre 0,50% y 30%");
+                            document.datos.interesfijo.focus();
+                            if (document.datos.interesfijo.value.replace(",",".") > 30){
+                                $("#interesfijo").val(30);
+                            }else{
+                                $("#interesfijo").val(formatAsDecimal(0.5));
+                                $("#interesfijo").val($("#interesfijo").val().replace(".",","));
+                            }
+                            return false;
+                        }
+                    }
+                }
+            }
+
+
+            //validar importe
+            if (document.datos.importeslider.value == ""){
+                $('#alert-importe').text('Tiene que introducir un importe.').show().delay(1000).fadeOut(1000);
+                document.datos.importeslider.focus();
+                $("#importeslider").val(formatAsCurrency(200000));
+                return false;
+            }else{
+                var valor = document.datos.importeslider.value.replace(/[.]/g,"").replace(",",".");
+                if (isNaN(valor)){
+                    $('#alert-importe').text('El importe debe ser un valor numérico').show().delay(1000).fadeOut(1000);
+                    document.datos.importeslider.focus();
+                    $("#importeslider").val(formatAsCurrency(200000));
+                    return false;
+                }else{
+                        if (valor > 1000000){
+                        $('#alert-importe').text('El importe no puede ser superior a 1.000.000€').show().delay(1000).fadeOut(1000);
+                        document.datos.importeslider.focus();
+                        $("#importeslider").val(formatAsCurrency(1000000));
+                        return false;
+                    }
+                    if (valor < 6000){
+                        $('#alert-importe').text('El importe debe ser mayor o igual a 6000€').show().delay(1000).fadeOut(1000);
+                        document.datos.importeslider.focus();
+                        $("#importeslider").val(formatAsCurrency(6000));
+                        return false;
+                    }
+                }
+            }
+
+            //validar plazo
+            if (( document.datos.plazoslider.value =="") || (document.datos.plazoslider.value == 0)){
+                $('#alert-plazo').text('Debes introducir un plazo.').show().delay(1000).fadeOut(1000);
+                document.datos.plazoslider.focus();
+                $("#plazoslider").val(1);
+                return false;
+            }else{
+                if (isNaN(document.datos.plazoslider.value.replace(",","."))){
+                    $('#alert-plazo').text('El plazo debe ser un valor numérico').show().delay(1000).fadeOut(1000);
+                    $("#plazoslider").val(1);
+                    document.datos.plazoslider.focus();
+                    return false;
+                }else{
+                    if (document.datos.plazoslider.value > 60){
+                        $('#alert-plazo').text('El plazo no puede ser superior a 60 a?os').show().delay(1000).fadeOut(1000);
+                        $("#plazoslider").val(60);
+                        document.datos.plazoslider.focus();
+                        return false;
+                    }
+                }
+            }
+
+        }
+
+
+        //valores por defecto
+        $('#form-avanzada #importe').val(200000);
+        $('#form-avanzada #plazo').val(30);
+        $('#form-avanzada #interes').val('2.11');
+    });
+    //-->
+</script>
+</body>
+</html>
