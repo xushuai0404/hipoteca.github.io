@@ -180,9 +180,9 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
                 </script>
             <!-- End Google Tag Manager -->
 
-    <!--  Formulario de b¨²squeda -->
+    <!--  Formulario de bÂ¨Â²squeda -->
     <form action="" method="post" class="widget simulador-h nomargin" name="datos" id="form-simulador">
-        <h3 class="bolder f-110 gris-6">1. Selecciona el tipo de inter¨¦s</h3>
+        <h3 class="bolder f-110 gris-6">1. Selecciona el tipo de interÂ¨Â¦s</h3>
         <fieldset class="type-line fullline tabu-1">
             <div class="box nomargin-b">
                 <input type="radio" name="interes" id="tipointeresvar" checked="checked" value="0"/><span> Variable:</span>
@@ -195,13 +195,13 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
                                                     <option value="1.936" >IRPHce (IRPH Conjunto Entidades)</option>
                                             </select>
                     <span class="bolder f-120 gris-9 inline-block">+</span>
-                    <input maxlength= "6" name="diferencial" id="diferencial_presuma" type="text" class="unitx1_3" value="0,00" />
+                    <input maxlength= "8" name="diferencial" id="diferencial_presuma" type="text" class="unitx1_3" value="0,00" />
                     <span class="bolder f-120 gris-9 inline-block">=</span>
-                    <input type="text" value="2,008" class="unitx1_3" name="resultadointeres" id="total-disabled" disabled="disabled" /> %
+                    <input type="text" maxlength= "8" value="2,008" class="unitx1_3" name="resultadointeres" id="total-disabled" disabled="disabled" /> %
                 </div>
                 <div class="block separadort">
                     <input type="radio" name="interes" id="tipointeresfijo"  value="1" /><span> Fijo: </span>
-                    <input maxlength= "6"  type="text" class="unitx1_2" id="interesfijo" name="interes-fijo" disabled="disabled" /> <span>%</span>
+                    <input maxlength= "8"  type="text" class="unitx1_2" id="interesfijo" name="interes-fijo" disabled="disabled" /> <span>%</span>
                 </div>
             </div>
         </fieldset>
@@ -210,7 +210,7 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
             <div class="box nomargin-b">
                 <div class="fld field-importe">
                                         <label for="calculaimporte">Importe:</label>
-                    <input maxlength= "12" type="text" class="unitx1" id="importeslider" name="importeslider" value="200000" /> €
+                    <input maxlength= "12" type="text" class="unitx1" id="importeslider" name="importeslider" value="200000" /> Â€
                     <span id="alert-importe" class="rojo"></span>
                 </div>
                 <div class="fld caja-importe caja-importe-hipotecas clear separador">
@@ -233,13 +233,13 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
         </fieldset>
 
     </form>
-    <!--  Formulario de b¨²squeda -->
+    <!--  Formulario de bÂ¨Â²squeda -->
 
     <div class="resultado-simulador-h tabu-1">
         <span class="bolder f-140 oxid">Resultado:</span>
         <span id="label-resultado" class="f-110 tabu-1">Cuota mensual:</span>
         <span id="value-resultado" class="f-140 bolder verde inline-block">
-            1.023 €
+            1.023 Â€
         </span>
     </div>
 
@@ -462,9 +462,9 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
         });
 
 
-        //////////// C¨¢LCULOS //////////////
+        //////////// CÂ¨Â¢LCULOS //////////////
 
-        //M¨¦todos de datos sliders
+        //MÂ¨Â¦todos de datos sliders
         function calcular(interes, cuota, importe, plazo){
             calculaCuota(interes, importe, plazo);
         }
@@ -476,9 +476,9 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
             var interes2 = Math.pow( (1 + interesMensual) , -plazo );
             cuota =  parseFloat((importe * interesMensual)/(1- interes2)).toFixed(2);
             $('#cuota').val(formatAsCurrency(formatAsDecimal(cuota)));
-            $('#resultado').val(formatAsCurrency(formatAsDecimal(cuota))+" €");
+            $('#resultado').val(formatAsCurrency(formatAsDecimal(cuota))+" Â€");
             $('#label-resultado').text("Cuota mensual:");
-            $('#value-resultado').text(formatAsCurrency(formatAsDecimal(cuota))+" €");
+            $('#value-resultado').text(formatAsCurrency(formatAsDecimal(cuota))+" Â€");
             sliderCuotaLock = true;
             jQuery("#sliderCuota").slider("value", parseFloat(cuota));
             sliderCuotaLock = false;
@@ -495,12 +495,12 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
             //validar interes variable
             if (document.getElementById('interesfijo').disabled) {
                 if ($('#diferencial_presuma').val() == '') {
-                    alert ("debes introducir un valor para el inter¨¦s variable");
+                    alert ("debes introducir un valor para el interÂ¨Â¦s variable");
                     document.datos.diferencial_presuma.focus();
                     $('#diferencial_presuma').val(0,00);
                 }else{
                     if (isNaN(document.datos.diferencial_presuma.value.replace(",","."))){
-                        alert("El inter¨¦s debe ser un valor num¨¦rico");
+                        alert("El interÂ¨Â¦s debe ser un valor numÂ¨Â¦rico");
                         document.datos.diferencial_presuma.focus();
                         $("#diferencial_presuma").val(0,00);
                         return false;
@@ -522,18 +522,18 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
             //validar interes fijo
             if (document.getElementById('diferencial_presuma').disabled) {
                 if ($('#interesfijo').val() == '') {
-                    alert ("debes introducir un valor de inter¨¦s fijo");
+                    alert ("debes introducir un valor de interÂ¨Â¦s fijo");
                     document.datos.interesfijo.focus();
                     $('#interesfijo').val(formatAsDecimal(0.5));
                 }else{
                     if (isNaN(document.datos.interesfijo.value.replace(",","."))){
-                        alert("El inter¨¦s debe ser un valor num¨¦rico");
+                        alert("El interÂ¨Â¦s debe ser un valor numÂ¨Â¦rico");
                         document.datos.interesfijo.focus();
                         $("#interesfijo").val(formatAsDecimal(0.5));
                         return false;
                     }else{
                         if ((document.datos.interesfijo.value.replace(",",".") > 30) || (document.datos.interesfijo.value.replace(",",".") < 0)){
-                            alert("El inter¨¦s fijo debe ser un valor comprendido entre 0,50% y 30%");
+                            alert("El interÂ¨Â¦s fijo debe ser un valor comprendido entre 0,50% y 30%");
                             document.datos.interesfijo.focus();
                             if (document.datos.interesfijo.value.replace(",",".") > 30){
                                 $("#interesfijo").val(30);
@@ -557,19 +557,19 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
             }else{
                 var valor = document.datos.importeslider.value.replace(/[.]/g,"").replace(",",".");
                 if (isNaN(valor)){
-                    $('#alert-importe').text('El importe debe ser un valor num¨¦rico').show().delay(1000).fadeOut(1000);
+                    $('#alert-importe').text('El importe debe ser un valor numÂ¨Â¦rico').show().delay(1000).fadeOut(1000);
                     document.datos.importeslider.focus();
                     $("#importeslider").val(formatAsCurrency(200000));
                     return false;
                 }else{
                         if (valor > 1000000){
-                        $('#alert-importe').text('El importe no puede ser superior a 1.000.000€').show().delay(1000).fadeOut(1000);
+                        $('#alert-importe').text('El importe no puede ser superior a 1.000.000Â€').show().delay(1000).fadeOut(1000);
                         document.datos.importeslider.focus();
                         $("#importeslider").val(formatAsCurrency(1000000));
                         return false;
                     }
                     if (valor < 6000){
-                        $('#alert-importe').text('El importe debe ser mayor o igual a 6000€').show().delay(1000).fadeOut(1000);
+                        $('#alert-importe').text('El importe debe ser mayor o igual a 6000Â€').show().delay(1000).fadeOut(1000);
                         document.datos.importeslider.focus();
                         $("#importeslider").val(formatAsCurrency(6000));
                         return false;
@@ -585,7 +585,7 @@ ul.progres-stat li span, ul.progres-stat li a.stat-ok:before,.btn-arrow.green a:
                 return false;
             }else{
                 if (isNaN(document.datos.plazoslider.value.replace(",","."))){
-                    $('#alert-plazo').text('El plazo debe ser un valor num¨¦rico').show().delay(1000).fadeOut(1000);
+                    $('#alert-plazo').text('El plazo debe ser un valor numÂ¨Â¦rico').show().delay(1000).fadeOut(1000);
                     $("#plazoslider").val(1);
                     document.datos.plazoslider.focus();
                     return false;
